@@ -1,144 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TrendyAura – Smart Living Starts Here</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendyaura Categories</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f7f8fa;
+      padding: 20px;
+      background: #f5f5f5;
     }
-    header {
-      background-color: #5e60ce;
-      color: white;
-      padding: 20px 40px;
+    h1 {
       text-align: center;
+      margin-bottom: 30px;
     }
-    nav {
-      background: #4ea8de;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      padding: 10px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #3b9bd3;
-      border-radius: 20px;
-    }
-    nav a:hover {
-      background: #2f81b7;
-    }
-    .container {
-      display: flex;
-      margin: 30px;
-      gap: 30px;
-    }
-    .main-content {
-      flex: 3;
-    }
-    .sidebar {
-      flex: 1;
+    .card {
       background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .post {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .post img {
-      width: 100%;
-      border-radius: 6px;
-    }
-    .post h3 {
-      margin-top: 10px;
-    }
-    .post a {
-      text-decoration: none;
-      color: #5e60ce;
-    }
-    .sidebar h4 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-    footer {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 20px;
-      background: #4ea8de;
-      color: white;
-      margin-top: 30px;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>TrendyAura</h1>
-  <p>Your Guide to Smart Living – Honest Reviews & Life Solutions</p>
-</header>
-
-<nav>
-  <a href="#">Home</a>
-  <a href="fashion.html">Fashion</a>
-  <a href="home.html">Home</a>
-  <a href="life.html">Life</a>
-  <a href="games.html">Gaming</a>
-  <a href="#">Tech</a>
-  <a href="#">Work From Home</a>
-</nav>
-
-<div class="container">
-  <div class="main-content">
-    <div class="post">
-      <img src="https://m.media-amazon.com/images/I/71pC69I3BQL._AC_SL1500_.jpg" alt="Lamp">
-      <h3>Editor’s Pick: Minimalist LED Desk Lamp</h3>
-      <p>This lamp is perfect for small desks, late-night readers, and students. With touch dimming and USB charging, it’s a smart choice for modern homes.</p>
-      <a href="https://your-amazon-affiliate-link" target="_blank">Read Full Review</a>
+  <h1>Explore Categories</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="assets/images/home.png" alt="Home">
+      <p>Home</p>
     </div>
-
-    <div class="post">
-      <img src="https://m.media-amazon.com/images/I/81s6DUyQCZL._AC_SL1500_.jpg" alt="Chair">
-      <h3>We Compared 3 Ergonomic Chairs – Here’s What We Found</h3>
-      <p>If you work long hours, choosing the right chair matters. We tested different styles and brands—this is the one that stood out in comfort and support.</p>
-      <a href="https://your-affiliate-link" target="_blank">See Our Insights</a>
+    <div class="card">
+      <img src="assets/images/lifestyle.png" alt="Lifestyle">
+      <p>Lifestyle</p>
     </div>
-
-    <div class="post">
-      <img src="https://m.media-amazon.com/images/I/91JZs-jM6lL._AC_SL1500_.jpg" alt="Fashion Watch">
-      <h3>Top 5 Minimalist Watches in 2025</h3>
-      <p>Looking stylish doesn’t have to cost a fortune. Here’s our list of budget-friendly yet elegant watches for everyday wear.</p>
-      <a href="https://your-affiliate-link" target="_blank">Explore Now</a>
+    <div class="card">
+      <img src="assets/images/tech.png" alt="Tech">
+      <p>Tech</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/kitchen.png" alt="Kitchen">
+      <p>Kitchen</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/decor.png" alt="Decor">
+      <p>Decor</p>
     </div>
   </div>
-
-  <div class="sidebar">
-    <h4>Quick Reads</h4>
-    <ul>
-      <li><a href="#">Home Office Setup Checklist</a></li>
-      <li><a href="#">Gaming Chair vs Office Chair</a></li>
-      <li><a href="#">Top Kitchen Gadgets Under $50</a></li>
-      <li><a href="#">Best Plants for Small Spaces</a></li>
-    </ul>
-
-    <h4>Comparison Guides</h4>
-    <ul>
-      <li><a href="#">Noise Cancelling vs Open-Back Headphones</a></li>
-      <li><a href="#">Top 3 Air Purifiers Compared</a></li>
-    </ul>
-  </div>
-</div>
-
-<footer>
-  &copy; 2025 TrendyAura | Lifestyle Advice, Reviews & Daily Solutions
-</footer>
-
 </body>
 </html>
