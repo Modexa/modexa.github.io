@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modexa - Lifestyle & Tech Finds</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f5f5f5;
       color: #333;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
-      background-color: #222;
+      background-color: #2c3e50;
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -26,150 +28,144 @@
     }
 
     nav {
-      background-color: #444;
+      background-color: #34495e;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 10px 0;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      margin: 10px 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    .main {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      margin-right: 20px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+
+    .sidebar ul li a:hover {
+      color: #e74c3c;
+    }
+
+    .content {
+      flex: 1;
     }
 
     .hero {
       background: url('assets/images/hero-banner.jpg') no-repeat center center/cover;
-      height: 300px;
+      height: 250px;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
       text-shadow: 1px 1px 5px #000;
+      border-radius: 12px;
     }
 
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
-    .content {
-      padding: 40px;
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
       text-align: center;
+      margin-bottom: 20px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 20px;
-      margin-top: 20px;
-    }
-
-    .card-link {
-      text-decoration: none;
-      color: inherit;
-      display: block;
     }
 
     .card {
-      width: 100%;
-      height: 180px;
       background: #fff;
       padding: 10px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
       transition: transform 0.3s;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
 
     .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
     .card img {
-      max-height: 100%;
-      width: auto;
+      width: 100%;
+      height: 120px;
       object-fit: contain;
       border-radius: 8px;
-      display: block;
     }
 
     .card p {
       margin-top: 10px;
-      font-size: 16px;
       font-weight: 600;
-      color: #333;
-      text-align: center;
     }
 
-    /* NEW: Quick Picks section */
-    .quick-picks {
-      background: #f2f2f2;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .quick-picks h2 {
-      margin-bottom: 20px;
-    }
-
-    .mini-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .mini-card {
-      background: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      color: #333;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: all 0.3s;
-    }
-
-    .mini-card:hover {
-      background: #eaeaea;
-    }
-
-    /* NEW: Featured story/blog preview */
     .featured-story {
+      max-width: 700px;
+      margin: 40px auto;
       background: #fff;
-      padding: 60px 20px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
-    .story-box {
-      max-width: 700px;
-      margin: auto;
-      background: #fafafa;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    }
-
-    .story-box h3 {
-      font-size: 24px;
+    .featured-story h3 {
       margin-bottom: 15px;
     }
 
-    .story-box p {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .story-box a {
-      text-decoration: none;
-      background: #333;
+    .featured-story a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #2c3e50;
       color: #fff;
-      padding: 10px 18px;
+      padding: 10px 20px;
+      text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
     }
@@ -177,18 +173,17 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: #222;
-      color: #ccc;
+      background: #2c3e50;
+      color: #fff;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Modexa</h1>
+    <h1>Modexa</h1>
     <p>Your Daily Dose of Lifestyle, Home & Tech Finds</p>
   </header>
-
   <nav>
     <a href="#home">HomeGlow</a>
     <a href="#lifestyle">Lifestyle</a>
@@ -196,68 +191,55 @@
     <a href="#kitchen">Taste & Tools</a>
     <a href="#beauty">Beauty</a>
   </nav>
+  <div class="main">
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Top 5 Decor Hacks</a></li>
+        <li><a href="#">Best Tech Under $50</a></li>
+        <li><a href="#">Morning Beauty Tips</a></li>
+        <li><a href="#">Must-Have Kitchen Tools</a></li>
+        <li><a href="#">Lifestyle on a Budget</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <section class="hero">
+        <h2>Trends That Make Life Easier</h2>
+      </section>
 
-  <section class="hero">
-    <h2>Discover Trends That Make Life Easier</h2>
-  </section>
+      <section class="section">
+        <h2>Explore Categories</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="HomeGlow.jpg" alt="HomeGlow">
+            <p>HomeGlow</p>
+          </div>
+          <div class="card">
+            <img src="lifestyle.jpg" alt="Lifestyle">
+            <p>Lifestyle</p>
+          </div>
+          <div class="card">
+            <img src="tech.jpg" alt="Tech">
+            <p>Tech</p>
+          </div>
+          <div class="card">
+            <img src="Taste-Tools.jpg" alt="Taste & Tools">
+            <p>Taste & Tools</p>
+          </div>
+          <div class="card">
+            <img src="beauty.jpg" alt="Beauty">
+            <p>Beauty</p>
+          </div>
+        </div>
+      </section>
 
-  <section class="content">
-    <h2>Explore Categories</h2>
-    <div class="grid">
-      <a href="#" class="card-link">
-        <div class="card">
-          <img src="HomeGlow.jpg" alt="HomeGlow">
-          <p>HomeGlow</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card">
-          <img src="lifestyle.jpg" alt="Lifestyle">
-          <p>Lifestyle</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card">
-          <img src="tech.jpg" alt="Tech">
-          <p>Tech</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card">
-          <img src="Taste-Tools.jpg" alt="Taste & Tools">
-          <p>Taste & Tools</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card">
-          <img src="beauty.jpg" alt="Beauty">
-          <p>Beauty</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ✅ New Section: Quick Picks -->
-  <section class="quick-picks">
-    <h2>Quick Picks</h2>
-    <div class="mini-grid">
-      <a href="#" class="mini-card">5 Cozy Decor Ideas</a>
-      <a href="#" class="mini-card">Top Lifestyle Gadgets</a>
-      <a href="#" class="mini-card">Kitchen Must-Haves</a>
-      <a href="#" class="mini-card">Morning Beauty Hacks</a>
-    </div>
-  </section>
-
-  <!-- ✅ New Section: Featured Story -->
-  <section class="featured-story">
-    <h2>Featured Insight</h2>
-    <div class="story-box">
-      <h3>How to Create a Calm Space at Home</h3>
-      <p>Discover easy tips to transform your space into a soothing, stylish sanctuary that supports your lifestyle and wellness goals.</p>
-      <a href="#">Read More</a>
-    </div>
-  </section>
-
+      <section class="featured-story">
+        <h3>How to Create a Calm Space at Home</h3>
+        <p>Discover simple tricks to make your home peaceful, cozy, and productive with just a few smart changes.</p>
+        <a href="#">Read More</a>
+      </section>
+    </main>
+  </div>
   <footer>
     <p>&copy; 2025 Modexa. All rights reserved.</p>
   </footer>
