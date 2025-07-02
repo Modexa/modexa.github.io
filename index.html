@@ -43,15 +43,16 @@
       border-bottom: 1px solid #eee;
     }
 
-    /* Navigation links style */
+    /* Navigation links styled as pill-shaped buttons */
     nav a {
+      background-color: #eee;
+      padding: 8px 16px;
+      border-radius: 20px;
       color: #2c3e50;
       text-decoration: none;
       font-weight: 600;
-      padding: 8px 16px;
-      white-space: nowrap;
-      border-radius: 5px;
       transition: background-color 0.3s ease, color 0.3s ease;
+      white-space: nowrap;
     }
 
     nav a:hover {
@@ -68,10 +69,11 @@
       padding: 40px 20px;
     }
 
+    /* Sidebar with colored background block */
     .sidebar {
       flex: 1;
       min-width: 250px;
-      background: #fff;
+      background-color: #f0f8ff; /* light blue background */
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -231,7 +233,7 @@
   </nav>
 
   <div class="main">
-    <aside class="sidebar">
+    <aside class="sidebar" id="quick-picks">
       <h3>Quick Picks</h3>
       <ul>
         <li><a href="skincare-tools.html">✨ Best Skincare Tools of 2025</a></li>
