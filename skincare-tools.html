@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,8 +11,13 @@
     .product { display:flex; align-items:flex-start; margin-bottom:30px; }
     .product img { width:150px; border-radius:8px; margin-right:20px; }
     .product-info { flex:1; }
-    .product-info h3 a { text-decoration:none; color:#2c3e50; }
-    .product-info h3 a:hover { color:#e74c3c; }
+    .product-info h3 a {
+      text-decoration: underline;
+      color: #0066cc;
+    }
+    .product-info h3 a:hover {
+      color: #e74c3c;
+    }
   </style>
 </head>
 <body>
@@ -24,46 +29,46 @@
   <div class="container">
 
     <!-- Product 1 -->
-    <div class="product">
+    <div class="product" itemscope itemtype="https://schema.org/Product">
       <a href="https://amzn.to/4ldMHcP" target="_blank">
-        <img src="oraskin.jpg" alt="ORA Glow Facial Cleansing Device">
+        <img src="oraskin.jpg" alt="ORA Glow Facial Cleansing Device" itemprop="image">
       </a>
       <div class="product-info">
-        <h3><a href="https://amzn.to/4ldMHcP" target="_blank">ORA Glow Facial Cleansing Device</a></h3>
-        <p>This compact silicone cleansing tool uses gentle vibrations to lift dirt and makeup from the skin without over-exfoliating. Dermatologists favor silicone brushes because they're hygienic and great for daily use. Ideal for sensitive skin and travel-friendly.</p>
+        <h3><a href="https://amzn.to/4ldMHcP" target="_blank" itemprop="name">ORA Glow Facial Cleansing Device</a></h3>
+        <p itemprop="description">This compact silicone cleansing tool uses gentle vibrations to lift dirt and makeup from the skin without over-exfoliating. Dermatologists favor silicone brushes because they're hygienic and great for daily use. Ideal for sensitive skin and travel-friendly.</p>
       </div>
     </div>
 
     <!-- Product 2 -->
-    <div class="product">
+    <div class="product" itemscope itemtype="https://schema.org/Product">
       <a href="https://amzn.to/44cVJ3K" target="_blank">
-        <img src="DEMAROLLER.jpg" alt="Kitsch Micro Derma Roller">
+        <img src="DEMAROLLER.jpg" alt="Kitsch Micro Derma Roller" itemprop="image">
       </a>
       <div class="product-info">
-        <h3><a href="https://amzn.to/44cVJ3K" target="_blank">Kitsch Micro Derma Roller (0.25 mm)</a></h3>
-        <p>Safe for beginners, this microneedle roller helps stimulate collagen with tiny 0.25 mm needles. Many users report improved skin texture and better serum absorption over time. Always follow with a clean moisturizer to calm the skin post-use.</p>
+        <h3><a href="https://amzn.to/44cVJ3K" target="_blank" itemprop="name">Kitsch Micro Derma Roller (0.25 mm)</a></h3>
+        <p itemprop="description">Safe for beginners, this microneedle roller helps stimulate collagen with tiny 0.25 mm needles. Many users report improved skin texture and better serum absorption over time. Always follow with a clean moisturizer to calm the skin post-use.</p>
       </div>
     </div>
 
     <!-- Product 3 -->
-    <div class="product">
+    <div class="product" itemscope itemtype="https://schema.org/Product">
       <a href="https://amzn.to/4nw2Vzj" target="_blank">
-        <img src="eco.jpg" alt="EcoTools Deep Cleansing Brush">
+        <img src="eco.jpg" alt="EcoTools Deep Cleansing Brush" itemprop="image">
       </a>
       <div class="product-info">
-        <h3><a href="https://amzn.to/4nw2Vzj" target="_blank">EcoTools Deep Cleansing Facial Brush</a></h3>
-        <p>Simple, manual, and eco-conscious, this brush is great for those who prefer no batteries or charging. The bristles are firm but non-irritating and ideal for daily or every-other-day use to keep pores fresh and skin soft.</p>
+        <h3><a href="https://amzn.to/4nw2Vzj" target="_blank" itemprop="name">EcoTools Deep Cleansing Facial Brush</a></h3>
+        <p itemprop="description">Simple, manual, and eco-conscious, this brush is great for those who prefer no batteries or charging. The bristles are firm but non-irritating and ideal for daily or every-other-day use to keep pores fresh and skin soft.</p>
       </div>
     </div>
 
     <!-- Product 4 -->
-    <div class="product">
+    <div class="product" itemscope itemtype="https://schema.org/Product">
       <a href="https://amzn.to/4kmDZHM" target="_blank">
-        <img src="dermaskin.jpg" alt="NuDerma High Frequency Wand">
+        <img src="dermaskin.jpg" alt="NuDerma High Frequency Wand" itemprop="image">
       </a>
       <div class="product-info">
-        <h3><a href="https://amzn.to/4kmDZHM" target="_blank">NuDerma High Frequency Wand</a></h3>
-        <p>This tool uses low-level electrical current to target breakouts and promote circulation. Many users say it helps reduce inflammation quickly and is useful during early pimple formation. Comes with multiple attachments for different zones.</p>
+        <h3><a href="https://amzn.to/4kmDZHM" target="_blank" itemprop="name">NuDerma High Frequency Wand</a></h3>
+        <p itemprop="description">This tool uses low-level electrical current to target breakouts and promote circulation. Many users say it helps reduce inflammation quickly and is useful during early pimple formation. Comes with multiple attachments for different zones.</p>
       </div>
     </div>
 
