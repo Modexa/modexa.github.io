@@ -18,7 +18,7 @@
       flex-direction: row;
       gap: 20px;
       align-items: flex-start;
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
     .intro-text {
       flex: 2;
@@ -26,6 +26,7 @@
     .intro-image {
       flex: 1;
       align-self: flex-start;
+      margin-top: 4px;
     }
     .intro-image img {
       max-width: 100%;
@@ -34,10 +35,14 @@
     @media (max-width: 768px) {
       .intro-section {
         flex-direction: column;
+        margin-bottom: 0;
+      }
+      .intro-image {
+        margin-top: 0;
       }
     }
     .after-intro {
-      margin-top: 10px;
+      margin-top: 0;
     }
   </style>
 </head>
