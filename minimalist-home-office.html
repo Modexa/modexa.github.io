@@ -7,11 +7,32 @@
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
     header, footer { background:#2c3e50; color:white; text-align:center; padding:20px; }
-    .container { max-width:800px; margin:auto; padding:20px; background:white; line-height:1.7; }
+    .container { max-width:800px; margin:auto; padding:20px; background:white; line-height:1.7; display: flex; flex-direction: column; gap: 20px; }
     h1, h2 { color:#2c3e50; }
     a { color: #0066cc; text-decoration: underline; }
     a:hover { color: #e67e22; }
     ul { padding-left: 20px; }
+    .intro-section {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .intro-text {
+      flex: 2;
+    }
+    .intro-image {
+      flex: 1;
+    }
+    .intro-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .intro-section {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
@@ -21,13 +42,20 @@
   </header>
 
   <div class="container" itemprop="articleBody">
-    <p>Minimalism isn’t just about fewer things — it’s about more purpose. A minimalist home office can help reduce distractions, boost productivity, and create a peaceful work environment. Here’s how to create one that feels intentional and inspiring.</p>
+    <div class="intro-section">
+      <div class="intro-text">
+        <p>Minimalism isn’t just about fewer things — it’s about more purpose. A minimalist home office can help reduce distractions, boost productivity, and create a peaceful work environment. Here’s how to create one that feels intentional and inspiring.</p>
+      </div>
+      <div class="intro-image">
+        <img src="minimalist-office.jpg" alt="Minimalist Home Office Setup">
+      </div>
+    </div>
 
     <h2>1. Start with the Essentials</h2>
-    <p>Only keep items that you truly need: a desk, a comfortable chair, and your laptop or desktop. Remove anything that doesn’t serve a daily purpose. This will immediately open up visual space.</p>
+    <p>Only keep items that you truly need: a <a href="#" target="_blank">desk</a>, a <a href="#" target="_blank">comfortable chair</a>, and your <a href="#" target="_blank">laptop</a>. Remove anything that doesn’t serve a daily purpose. This will immediately open up visual space.</p>
 
     <h2>2. Choose Neutral Colors</h2>
-    <p>Use a calming palette — whites, greys, light wood tones — to reflect light and promote clarity. You can add warmth with soft textiles like a rug or curtains.</p>
+    <p>Use a calming palette — whites, greys, light wood tones — to reflect light and promote clarity. You can add warmth with soft textiles like a <a href="#" target="_blank">rug</a> or <a href="#" target="_blank">curtains</a>.</p>
 
     <h2>3. Declutter and Hide Cables</h2>
     <p>Use <a href="https://amzn.to/your-link1" target="_blank">cable organizers</a> or a cable box to keep wires out of sight. Minimalism often starts with visual calm, and tangled cords can be a source of distraction.</p>
@@ -36,7 +64,7 @@
     <p>Consider a desk with built-in drawers or a shelf unit that doubles as storage. <a href="https://amzn.to/your-link2" target="_blank">Floating wall shelves</a> help store essentials without taking up floor space.</p>
 
     <h2>5. Add One or Two Personal Touches</h2>
-    <p>A small plant, a framed quote, or a photo can add warmth without creating clutter. Keep it intentional — less is more.</p>
+    <p>A small <a href="#" target="_blank">plant</a>, a <a href="#" target="_blank">framed quote</a>, or a photo can add warmth without creating clutter. Keep it intentional — less is more.</p>
 
     <h2>6. Use Natural Light</h2>
     <p>Set up your workspace near a window if possible. Natural light improves mood and energy, and reduces eye strain.</p>
