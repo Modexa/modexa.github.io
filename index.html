@@ -41,9 +41,43 @@
       justify-content: center;
       gap: 12px;
       border-bottom: 1px solid #eee;
+      position: relative;
+      z-index: 10;
     }
 
-    /* Navigation links styled as pill-shaped buttons */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content a {
+      color: #2c3e50;
+      padding: 10px 16px;
+      display: block;
+      text-decoration: none;
+      background-color: #f9f9f9;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #e67e22;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
     nav a {
       background-color: #eee;
       padding: 8px 16px;
@@ -69,11 +103,10 @@
       padding: 40px 20px;
     }
 
-    /* Sidebar with colored background block */
     .sidebar {
       flex: 1;
       min-width: 250px;
-      background-color: #f0f8ff; /* light blue background */
+      background-color: #f0f8ff;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -93,7 +126,6 @@
       margin-bottom: 12px;
     }
 
-    /* Sidebar links styled blue with underline */
     .sidebar a {
       color: #007bff;
       text-decoration: underline;
@@ -216,15 +248,15 @@
         order: 1;
       }
     }
+
     .contact-link {
-  color: #0066cc;
-  text-decoration: underline;
-}
+      color: #0066cc;
+      text-decoration: underline;
+    }
 
-.contact-link:hover {
-  color: #e67e22;
-}
-
+    .contact-link:hover {
+      color: #e67e22;
+    }
   </style>
 </head>
 <body>
@@ -234,49 +266,45 @@
   </header>
 
   <nav>
-    <a href="#categories">Categories</a>
-    <a href="#quick-picks">Quick Picks</a>
-    <a href="#guides">Guides</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
+    <div class="dropdown">
+      <a href="#">HomeGlow</a>
+      <div class="dropdown-content">
+        <a href="positive-vibes.html">Create Positive Vibes</a>
+        <a href="home-essentials.html">Home Essentials</a>
+        <a href="decor-gallery.html">Decor & Plants</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Tech</a>
+      <div class="dropdown-content">
+        <a href="smart-gadgets.html">Smart Gadgets</a>
+        <a href="under-budget.html">Tech Under Budget</a>
+        <a href="productivity-tools.html">Work from Home Tools</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Taste & Juice</a>
+      <div class="dropdown-content">
+        <a href="kitchen-tools.html">Kitchen Tools</a>
+        <a href="juicers.html">Juicers & Blenders</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Lifestyle</a>
+      <div class="dropdown-content">
+        <a href="travelguide.html">Travel Organizers</a>
+        <a href="daily-essentials.html">Daily Essentials</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Beauty</a>
+      <div class="dropdown-content">
+        <a href="skincare-tools.html">Skincare Tools</a>
+        <a href="hair-care.html">Hair Care Picks</a>
+      </div>
+    </div>
   </nav>
 
-  <div class="main">
-    <aside class="sidebar" id="quick-picks">
-      <h3>Quick Picks</h3>
-      <ul>
-        <li><a href="skincare-tools.html">✨ Best Skincare Tools of 2025</a></li>
-        <li><a href="smart-home-essentials.html">🪄 Smart Home Essentials You Need</a></li>
-        <li><a href="gadgets-under-50.html">🎧 Coolest Gadgets Under $50</a></li>
-      </ul>
-    </aside>
-
-    <section class="content">
-      <div id="categories" class="section">
-        <h2>Explore Categories</h2>
-        <div class="grid">
-          <div class="card">
-            <img src="HomeGlow.jpg" alt="HomeGlow" />
-            <p>HomeGlow</p>
-          </div>
-          <div class="card">
-            <img src="lifestyle.jpg" alt="Lifestyle" />
-            <p>Lifestyle</p>
-          </div>
-          <div class="card">
-            <img src="tech.jpg" alt="Tech" />
-            <p>Tech</p>
-          </div>
-          <div class="card">
-            <img src="Taste-Tools.jpg" alt="Taste & Tools" />
-            <p>Taste & Tools</p>
-          </div>
-          <div class="card">
-            <img src="beauty.jpg" alt="Beauty" />
-            <p>Beauty</p>
-          </div>
-        </div>
-      </div>
 
       <div id="guides" class="section">
         <h2>Guides</h2>
