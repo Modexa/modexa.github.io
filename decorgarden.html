@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decor & Garden Inspiration</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .item {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .link-btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #e67e22;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .link-btn:hover {
+      background-color: #cf5f08;
+    }
+
+    .back {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .back a {
+      color: #2c3e50;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Decor & Garden Ideas Grid</h1>
+    <p style="margin-top: 10px; font-style: italic;">Click to shop every look 🌿</p>
+  </header>
+
+  <div class="grid-container">
+    <div class="item">
+      <img src="decor1.jpg" alt="Modern Mirror">
+      <a class="link-btn" href="https://amzn.to/samplelink1" target="_blank">Get This Look</a>
+    </div>
+    <div class="item">
+      <img src="decor2.jpg" alt="Boho Plant Shelf">
+      <a class="link-btn" href="https://ebay.us/samplelink2" target="_blank">Get This Look</a>
+    </div>
+    <div class="item">
+      <img src="decor3.jpg" alt="Outdoor Garden Lights">
+      <a class="link-btn" href="https://amzn.to/samplelink3" target="_blank">Get This Look</a>
+    </div>
+    <div class="item">
+      <img src="decor4.jpg" alt="Wicker Chairs">
+      <a class="link-btn" href="https://ebay.us/samplelink4" target="_blank">Get This Look</a>
+    </div>
+    <div class="item">
+      <img src="decor5.jpg" alt="Minimalist Planters">
+      <a class="link-btn" href="https://amzn.to/samplelink5" target="_blank">Get This Look</a>
+    </div>
+    <div class="item">
+      <img src="decor6.jpg" alt="Garden Baskets">
+      <a class="link-btn" href="https://ebay.us/samplelink6" target="_blank">Get This Look</a>
+    </div>
+  </div>
+
+  <div class="back">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
