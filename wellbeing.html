@@ -1,79 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wellbeing & Self-Care for Women</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdf6f0;
-      color: #333;
+      background-color: #fefefe;
     }
 
     header {
-      background-color: #e9c5b5;
-      color: #3d3d3d;
+      background-color: #a772a1;
+      color: white;
       text-align: center;
       padding: 40px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-style: italic;
+    h1 {
+      margin-bottom: 10px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 30px;
-      background: #fff;
+      padding: 20px;
+      background-color: white;
     }
 
-    h2 {
-      color: #ba5c5c;
-    }
-
-    .section {
+    .product {
       margin-bottom: 40px;
     }
 
     .product-grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
     .product-box {
-      flex: 1;
-      min-width: 200px;
-      max-width: 300px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      padding: 15px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .product-box img {
       width: 100%;
-      height: 180px;
-      object-fit: contain;
-      border-radius: 8px;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     .buy-link {
       display: inline-block;
-      margin-top: 10px;
-      background-color: #ba5c5c;
+      margin-top: 8px;
+      background-color: #a772a1;
       color: white;
       padding: 6px 12px;
       text-decoration: none;
@@ -82,79 +64,104 @@
     }
 
     .buy-link:hover {
-      background-color: #a04040;
+      background-color: #8c5c8b;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #e9c5b5;
-      color: #333;
-      margin-top: 40px;
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #a772a1;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Wellbeing & Self-Care for Women</h1>
-    <p>Empowering routines for modern women, moms, and dreamers 💖</p>
+    <h1>Wellbeing & Self-Care</h1>
+    <p>Empowering women to live healthier, happier lives 🌸</p>
   </header>
 
   <div class="container">
-    <div class="section">
-      <h2>Why Self-Care Matters</h2>
-      <p>In today’s fast-paced life, it’s easy to forget ourselves. But self-care isn’t selfish — it’s essential. Whether you’re a mom juggling kids, a student chasing dreams, or a woman trying to do it all — setting aside time for yourself restores energy, boosts confidence, and nurtures your mental health.</p>
-    </div>
 
-    <div class="section">
-      <h2>Motivational Tips for a Balanced Life</h2>
-      <ul>
-        <li>🌞 Start your day with 10 minutes of stretching or yoga</li>
-        <li>🥗 Plan at least 3 healthy meals a week</li>
-        <li>📚 Read a motivational book each month</li>
-        <li>⌚ Track your steps or water intake with a smartwatch</li>
-        <li>🌱 Try growing microgreens or herbs at home for fun and nutrition</li>
-        <li>🛀 Set boundaries and take at least 30 mins a day for yourself</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Tools That Make a Difference</h2>
+    <div class="product">
+      <h2>Resistance Bands – Glute & Leg Strengthening</h2>
       <div class="product-grid">
         <div class="product-box">
-          <img src="yoga-mat.jpg" alt="Eco-Friendly Yoga Mat">
-          <p>Eco-Friendly Yoga Mat</p>
-          <a class="buy-link" href="#">Buy on Amazon</a>
-        </div>
-
-        <div class="product-box">
-          <img src="smartwatch.jpg" alt="Fitness Smartwatch">
-          <p>Fitness Smartwatch for Daily Goals</p>
-          <a class="buy-link" href="#">Buy on Amazon</a>
-        </div>
-
-        <div class="product-box">
-          <img src="herb-seeds.jpg" alt="Organic Herb Seed Kit">
-          <p>Organic Herb Seed Starter Kit</p>
-          <a class="buy-link" href="#">Buy on Amazon</a>
-        </div>
-
-        <div class="product-box">
-          <img src="selfcare-book.jpg" alt="Motivational Self-Care Book">
-          <p>Self-Care and Confidence Book</p>
-          <a class="buy-link" href="#">Buy on Amazon</a>
+          <img src="resistance-bands.jpg" alt="Resistance Bands">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
         </div>
       </div>
+      <p>Build strength and tone muscles with these simple yet powerful bands — perfect for home workouts and travel.</p>
     </div>
 
-    <div class="section">
-      <h2>Real Talk: From One Woman to Another</h2>
-      <p>Every woman deserves time to rest, reset, and grow. Whether you're making smoothies at 6 a.m., chasing toddlers, managing your career, or simply surviving — we see you. Your journey is unique, and your strength is unmatched. Let’s promise to lift each other up and prioritize our wellbeing every single day. 💪✨</p>
+    <div class="product">
+      <h2>Herbal Tea Sampler – Stress Relief & Detox</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="herbal-tea.jpg" alt="Herbal Tea Sampler">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <p>Unwind with calming herbal blends that promote better sleep, digestion, and peace of mind.</p>
     </div>
+
+    <div class="product">
+      <h2>Ankle/Wrist Weights – Boost Calorie Burn</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="ankle-weights.jpg" alt="Ankle Weights">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <p>Enhance your walks or workouts with these lightweight, adjustable weights — great for moms on the move!</p>
+    </div>
+
+    <div class="product">
+      <h2>Under-Desk Pedal Bike – Stay Active While Working</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="under-desk-bike.jpg" alt="Under Desk Pedal Bike">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <p>Perfect for busy moms or remote workers, this compact pedal bike keeps legs moving and energy flowing.</p>
+    </div>
+
+    <div class="product">
+      <h2>Motivational Wall Prints – Daily Self-Love</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="wall-prints.jpg" alt="Motivational Wall Prints">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <p>Inspire yourself with uplifting quotes and affirmations — ideal for bedrooms, workspaces, or home gyms.</p>
+    </div>
+
+    <div class="product">
+      <h2>Aromatherapy Candles – Relaxation in a Jar</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="aromatherapy-candle.jpg" alt="Aromatherapy Candle">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <p>Set the mood for relaxation, journaling, or yoga with these scented candles crafted for tranquility.</p>
+    </div>
+
+    <div class="product">
+      <h2>Portable Blender – Smoothies on the Go</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="portable-blender.jpg" alt="Portable Blender">
+          <a href="#" class="buy-link" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <p>Blend your favorite fruits, veggies, or protein shakes anytime, anywhere. Perfect for busy mornings!</p>
+    </div>
+
+    <a class="back-button" href="index.html">← Back to Home</a>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Modexa | Lifestyle & Empowerment</p>
-  </footer>
 </body>
 </html>
