@@ -9,156 +9,154 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fefefe;
+      background-color: #fdfdfd;
+      color: #333;
     }
 
     header {
-      background-color: #7f8c8d;
+      background-color: #d4a5a5;
       color: white;
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
     }
 
-    h1, h2 {
-      color: #2c3e50;
-      margin-top: 20px;
-    }
-
-    a {
-      color: #0073e6;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: #e67e22;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
-      padding: 20px;
-      background-color: white;
+      padding: 30px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #ba5c5c;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .product-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
 
     .product {
-      margin-bottom: 50px;
-    }
-
-    .product-images {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
+      background-color: #fff0f0;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
     }
 
     .product img {
-      width: 48%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 5px;
+      background-color: #fff;
     }
 
-    .buy-link {
+    .product h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+
+    .product a {
       display: inline-block;
-      margin-top: 10px;
-      background-color: #2c3e50;
+      margin-top: 5px;
+      color: #d66c6c;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #333;
       color: white;
-      padding: 6px 12px;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    .buy-link:hover {
-      background-color: #1a242f;
-    }
-
-    .back-button {
-      display: inline-block;
-      margin-top: 30px;
-      text-decoration: none;
-      color: #0073e6;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Wellbeing & Self-Care for Women</h1>
-    <p style="margin: 0; font-style: italic;">Empower your body and mind ✨</p>
+    <h1>Wellbeing & Self-Care</h1>
+    <p>Empowering Women to Prioritize Themselves 💖</p>
   </header>
 
   <div class="container">
-    <!-- Resistance Bands -->
-    <div class="product">
-      <h2>Resistance Bands – for Glute & Leg Strength</h2>
-      <div class="product-images">
-        <img src="resistance-bands.jpg" alt="Resistance Bands">
-      </div>
-      <p>Perfect for toning your legs and glutes at home, resistance bands make working out easy, flexible, and low impact. Great for busy moms or beginners.</p>
-      <a class="buy-link" href="#">Buy Now</a>
+    <div class="section">
+      <h2>Dear Women, It's Time to Choose Yourself</h2>
+      <p>
+        In the midst of work, family, and responsibilities, many women forget to care for the most important person: themselves.
+        Whether you're a busy mom, a young student, or a homemaker, self-care isn’t a luxury — it’s a necessity. Even 10 minutes
+        of focused movement, a cup of herbal tea, or a deep breath in the garden can shift your mindset.
+        Start small, stay consistent, and make yourself a priority.
+      </p>
     </div>
 
-    <!-- Herbal Tea Sampler -->
-    <div class="product">
-      <h2>Herbal Tea Sampler – for Stress Relief & Detox</h2>
-      <div class="product-images">
-        <img src="herbal-tea.jpg" alt="Herbal Tea Sampler">
+    <div class="section">
+      <h2>Self-Care Essentials</h2>
+      <div class="product-box">
+        <div class="product">
+          <img src="yoga-mat.jpg" alt="Yoga Mat">
+          <h3>Eco-Friendly Yoga Mat</h3>
+          <a href="#">Get this on Amazon</a>
+        </div>
+        <div class="product">
+          <img src="smart-watch.jpg" alt="Fitness Smartwatch">
+          <h3>Fitness Smartwatch</h3>
+          <a href="#">Track your goals</a>
+        </div>
+        <div class="product">
+          <img src="herbal-tea.jpg" alt="Herbal Tea Sampler">
+          <h3>Herbal Tea Sampler</h3>
+          <a href="#">Relax with tea</a>
+        </div>
+        <div class="product">
+          <img src="motivational-book.jpg" alt="Motivational Book">
+          <h3>Motivational Book</h3>
+          <a href="#">Read for growth</a>
+        </div>
+        <div class="product">
+          <img src="planner.jpg" alt="Daily Planner">
+          <h3>Daily Self-Care Planner</h3>
+          <a href="#">Organize your time</a>
+        </div>
+        <div class="product">
+          <img src="candles.jpg" alt="Aromatherapy Candles">
+          <h3>Aromatherapy Candles</h3>
+          <a href="#">Create calming vibes</a>
+        </div>
+        <div class="product">
+          <img src="portable-blender.jpg" alt="Portable Blender">
+          <h3>Portable Blender</h3>
+          <a href="#">Blend on-the-go</a>
+        </div>
       </div>
-      <p>A relaxing ritual to reduce stress, calm the nerves, and cleanse your system with blends like chamomile, ginger, and peppermint.</p>
-      <a class="buy-link" href="#">Buy Now</a>
     </div>
 
-    <!-- Ankle/Wrist Weights -->
-    <div class="product">
-      <h2>Ankle/Wrist Weights – Boost Walk Calorie Burn</h2>
-      <div class="product-images">
-        <img src="weights.jpg" alt="Ankle Wrist Weights">
-      </div>
-      <p>Add resistance to your daily walk or yoga session. These wearable weights are great for increasing calorie burn while doing everyday tasks.</p>
-      <a class="buy-link" href="#">Buy Now</a>
+    <div class="section">
+      <h2>Words to Remember</h2>
+      <p><em>“You can’t pour from an empty cup. Take care of yourself first.”</em></p>
+      <p>Take this as your sign to add 15 minutes to your day — just for YOU.</p>
     </div>
 
-    <!-- Under-Desk Pedal Bike -->
-    <div class="product">
-      <h2>Under-Desk Pedal Bike – Stay Active While Working</h2>
-      <div class="product-images">
-        <img src="pedal-bike.jpg" alt="Under Desk Bike">
-      </div>
-      <p>Perfect for moms or remote workers. Keep your legs moving while on your laptop or watching a show. Easy to store and use anywhere.</p>
-      <a class="buy-link" href="#">Buy Now</a>
+    <div class="section">
+      <a href="index.html">← Back to Home</a>
     </div>
-
-    <!-- Motivational Wall Prints -->
-    <div class="product">
-      <h2>Motivational Wall Prints – For Daily Inspiration</h2>
-      <div class="product-images">
-        <img src="motivational-print.jpg" alt="Wall Art for Self Love">
-      </div>
-      <p>Beautiful reminders of your strength, purpose, and self-worth. Frame these affirmations and hang in your room or workspace.</p>
-      <a class="buy-link" href="#">Buy Now</a>
-    </div>
-
-    <!-- Aromatherapy Candles -->
-    <div class="product">
-      <h2>Aromatherapy Candles – Relaxation via Scents</h2>
-      <div class="product-images">
-        <img src="aroma-candle.jpg" alt="Aromatherapy Candle">
-      </div>
-      <p>Set the mood for peace with calming lavender, eucalyptus, or sandalwood. These candles create a warm glow and peaceful scent to unwind.</p>
-      <a class="buy-link" href="#">Buy Now</a>
-    </div>
-
-    <!-- Portable Blender -->
-    <div class="product">
-      <h2>Portable Blender – For On-the-Go Smoothies</h2>
-      <div class="product-images">
-        <img src="portable-blender.jpg" alt="Portable Smoothie Blender">
-      </div>
-      <p>Make fresh smoothies wherever you are — at the gym, in the car, or while traveling. A must-have for busy women and health lovers.</p>
-      <a class="buy-link" href="#">Buy Now</a>
-    </div>
-
-    <a class="back-button" href="index.html">← Back to Home</a>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Modexa. All rights reserved.</p>
+  </footer>
 </body>
 </html>
