@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://modexa.github.io/</loc>
+    <lastmod>2025-08-02</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Main Categories -->
+  <url>
+    <loc>https://modexa.github.io/skincare-tools.html</loc>
+    <lastmod>2025-07-28</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/smart-home-essentials.html</loc>
+    <lastmod>2025-07-27</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/gadgets-under-50.html</loc>
+    <lastmod>2025-07-29</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Lifestyle & Decor -->
+  <url>
+    <loc>https://modexa.github.io/positive-vibes.html</loc>
+    <lastmod>2025-07-25</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/budgetdecor.html</loc>
+    <lastmod>2025-07-23</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/decorgarden.html</loc>
+    <lastmod>2025-07-26</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Wellness & Self-Care -->
+  <url>
+    <loc>https://modexa.github.io/wellbeing.html</loc>
+    <lastmod>2025-07-24</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/routine.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/weightlose.html</loc>
+    <lastmod>2025-07-20</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/mummytommy.html</loc>
+    <lastmod>2025-07-19</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Learning & Study -->
+  <url>
+    <loc>https://modexa.github.io/study.html</loc>
+    <lastmod>2025-07-18</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/games.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Kitchen & Food -->
+  <url>
+    <loc>https://modexa.github.io/kitchen-tools.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/recipes.html</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/kitchen-tools-guide.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Beauty & Hair -->
+  <url>
+    <loc>https://modexa.github.io/skincare.html</loc>
+    <lastmod>2025-07-14</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/haircare.html</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/glassskin.html</loc>
+    <lastmod>2025-07-12</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/Thinhair.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/redlight.html</loc>
+    <lastmod>2025-07-10</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Best Picks & Misc -->
+  <url>
+    <loc>https://modexa.github.io/bestpickid.html</loc>
+    <lastmod>2025-07-09</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/minimalist-home-office.html</loc>
+    <lastmod>2025-07-08</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/travelguide.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Other Pages -->
+  <url>
+    <loc>https://modexa.github.io/media-kit.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/terms-of-service.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://modexa.github.io/privacy-policy.html</loc>
+    <lastmod>2025-07-04</lastmod>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
