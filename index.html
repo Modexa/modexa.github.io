@@ -170,7 +170,15 @@
   max-width:600px; /* Add max-width to constrain size */
 
   }
-  .featured img{ border-radius:10px; margin-bottom:10px; max-height:200px; width:100%; object-fit:contain;}
+ featured img{ 
+  border-radius:10px; 
+  margin-bottom:10px; 
+  width:100%; 
+  height:200px; 
+  object-fit:cover;
+  object-position:center top; /* Focus on top-center instead of pure center */
+  background:#f8f9fa;
+}
   .featured h2{ margin:2px 0 6px; font-size:1.6rem; }
   .featured p{ margin:0 0 8px; line-height:1.5; color:#555; }
   .featured .cta{ color:var(--brand-accent); font-weight:700; }
@@ -185,7 +193,13 @@
   .news-slide{ display:none; }
   .news-slide.active{ display:block; }
   .news-card{ display:block; color:#111; }
-  .news-card img{ width:100%; height:180px; object-fit:contain; }
+  .news-card img{ 
+  width:100%; 
+  height:180px; 
+  object-fit:cover;
+  object-position:center top; /* Focus on important top section */
+  background:#f8f9fa;
+}
   .news-card .meta{ padding:10px 12px; }
   .news-card h4{ margin:0 0 6px; font-size:1rem; line-height:1.35; }
   .news-card p{ margin:0; color:#666; font-size:.92rem; line-height:1.45; }
@@ -205,7 +219,13 @@
     border-radius:10px; overflow:hidden; transition:transform .15s ease, box-shadow .15s ease;
   }
   .card:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
-  .card img{ width:100%; height:140px; object-fit:contain; }
+ .card img{ 
+  width:100%; 
+  height:140px; 
+  object-fit:cover;
+  object-position:center top; /* Focus on top portion of images */
+  background:#f8f9fa;
+}
   .card .content{ padding:12px; }
   .card .content h3{ margin:0 0 6px; font-size:1.06rem; }
   .card .content p{ margin:0; color:#666; font-size:.94rem; }
@@ -224,7 +244,16 @@
     background:#f0f8ff; border:1px solid var(--border); border-radius:10px; overflow:hidden;
   }
   .subcategory a{ display:block; }
-  .subcategory img{ width:100%; height:120px; object-fit:contain; }
+  .subcategory img{ 
+  width:100%; 
+  height:120px; 
+  object-fit:cover;
+  object-position:center top; /* Show top portion which usually has main content */
+  background:#f8f9fa;
+}
+  .card:hover img, .subcategory:hover img {
+  transform: scale(1.05); /* Slight zoom on hover for interactivity */
+}
   .subcategory h4{ margin:8px 10px 12px; font-size:1rem; }
 
   /* ---------- Footer ---------- */
