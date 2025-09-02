@@ -278,10 +278,28 @@
 
     /* Keep two columns (main + right rail) even on mobile as requested */
     .main{
-      grid-template-columns:minmax(0, 1fr) 44vw; /* left content + right narrow rail */
-      gap:12px;
+     grid-template-columns: 1fr; /* Single column instead of two */
+    gap:16px;
     }
-    .news-card img{ height:140px; }
+    
+  .featured{
+    order: 1; /* Featured article comes first */
+  }
+  
+  .news-rail{
+    order: 2; /* Trending Now comes after featured article */
+    margin-bottom: 16px;
+  }
+  
+  /* Make news rail full width on mobile */
+  .news-rail{
+    width: 100%;
+  }
+  
+  /* Adjust news card image height for mobile */
+  .news-card img{ height:140px; }
+}
+  
     /* Make sticky feel nicer on small screens */
     .nav-wrap{ top:42px; }
   }
